@@ -1,0 +1,218 @@
+/* global styles */
+
+section, header, article {
+	display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	width: 100%;
+	font-family: Lato,Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	color: #424242;
+	background-color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-bottom: 4em;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.noUnderline{
+	text-decoration: none;
+}
+
+.canvas {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0em 1em;
+}
+
+header {
+	padding: 2em;
+}
+
+.siteName {
+	font-size: 2.25em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.weddingDate {
+	color: #a8a8a8;
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+nav {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 1.5em 0.8em 0.8em;
+}
+
+nav ul li a {
+	color: #424242;
+	text-decoration: none;
+}
+
+.currentPage {
+	color: #a8a8a8;	
+}
+
+nav a:active, nav a:hover {
+	color: #a8a8a8;
+	cursor: pointer;
+}
+
+.dropdown {
+	display: none;
+}
+
+h1 {
+	padding: 1.5em 1em 1em;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+h2 {
+	padding: 2em 1.5em 1.5em;
+	font-size: 1em;
+    text-transform: uppercase;
+}
+
+p {
+	padding-bottom: 1em;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+
+a {
+	color: #424242;
+}
+
+sup {
+	text-transform: none;
+}
+
+.time {
+	font-weight: normal;
+}
+
+img {
+	width: 100%;
+}
+
+/* form */
+
+form {
+	text-align: left;
+    margin: 1.5em 5em;
+}
+
+label {
+	font-size: 0.8em;
+}
+
+input[type="text"], input[type="email"], textarea {
+	width: 100%;
+    padding: 1em 0em;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    margin-top: 0.5em;
+    border-radius: 2px
+}
+
+input[type="submit"] {
+	font-family: Lato,Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	letter-spacing: 2px;
+	border-radius: 2px;
+	padding: 0.25em 2em 0.5em;
+	background-color: #424242;
+	color: #fff;
+	border: 1px solid #424242;
+	cursor: pointer;
+}
+
+
+/* Smartphone*/
+@media screen and (max-width:767px) {
+	.canvas {
+		padding: 0em 1em;
+	}
+	header {
+		padding: 1em;
+	}
+	nav {
+		display: none !important;
+	}
+	.dropdown {
+		display: block;
+		position: relative;
+		padding: 1em;
+		text-transform: uppercase;
+		border-bottom: 2px solid #ddd;
+		cursor: pointer;
+	}
+
+	.dropdown-menu {
+    	margin-top: -1px;
+	    position: absolute;
+	    display: none;
+	    top: 100%;
+	    left: 0;
+	    z-index: 1000;
+	    float: left;
+	    min-width: 160px;
+	    margin: 2px 0 0;
+	    list-style: none;
+	    background-color: #fff;
+	    -webkit-background-clip: padding-box;
+	    background-clip: padding-box;
+	    padding: 1em 0em;
+	}
+
+	.open>.dropdown-menu {
+    	width: 100%;
+    	text-align: center;
+    	display: block;
+	}
+	.dropdown-menu li {
+		padding: 0.5em;
+	}
+	.dropdown-menu li a {
+		color: #424242;
+		text-decoration: none;
+	}
+	.dropdown-menu a:active, .dropdown-menu a:hover {
+		cursor: pointer;
+		color: #a8a8a8;
+	}
+	form {
+		margin: 0em;
+	}
+	iframe {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
