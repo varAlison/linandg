@@ -32,12 +32,6 @@ body {
 	text-decoration: none;
 }
 
-.canvas {
-	max-width: 100%;
-	margin: 0 ;
-	padding: 0;
-}
-
 header {
 	margin: 0 auto;
 	padding: 2em;
@@ -201,16 +195,12 @@ iframe {
 
 /* Smartphone*/
 @media screen and (max-width:767px) {
-	.canvas {
-		padding: 0em;
-		margin: 0em;
-	}
 	header {
-		padding: 1em;
+		padding: 1em 0em;
 		width: 100%;
 	}
 	.content{
-		padding: 1em;
+		padding: 1em 0em; 
 		width: 100%;
 	}
 

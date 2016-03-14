@@ -11,66 +11,63 @@
  		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="canvas">
-			<div class="dropdown">
-			    <div data-toggle="dropdown">Menu
-			    <span class="caret"></span></div>
-			    <ul class="dropdown-menu">
-			    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		<div class="dropdown">
+		    <div data-toggle="dropdown">Menu<span class="caret"></span></div>
+		    <ul class="dropdown-menu">
+		    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="rsvp.html" class="currentPage">RSVP</a></li>
+		    	<li><a href="wedding.html">Wedding Weekend</a></li>
+		    	<li><a href="travel.html">Travel</a></li>
+			    <li><a href="accommodations.html">Accommodations</a></li>
+		    </ul>
+		</div>
+		<script>
+			$(document).ready(function(){
+			  $('.dropdown a.test').on("click", function(e){
+			    $(this).next('ul').toggle();
+			    e.stopPropagation();
+			    e.preventDefault();
+			  });
+			});
+		</script>
+		<header>
+			<div class="siteName">Alison & Con Way</div>
+			<div class="weddomgDate">
+				<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
+			</div>	
+			<nav>				
+				<ul>
 			    	<li><a href="index.html">Home</a></li>
 			    	<li><a href="rsvp.html" class="currentPage">RSVP</a></li>
 			    	<li><a href="wedding.html">Wedding Weekend</a></li>
 			    	<li><a href="travel.html">Travel</a></li>
-				    <li><a href="accommodations.html">Accommodations</a></li>
-			    </ul>
-			</div>
-			<script>
-				$(document).ready(function(){
-				  $('.dropdown a.test').on("click", function(e){
-				    $(this).next('ul').toggle();
-				    e.stopPropagation();
-				    e.preventDefault();
-				  });
-				});
-			</script>
-			<header>
-				<div class="siteName">Alison & Con Way</div>
-				<div class="weddomgDate">
-					<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
-				</div>	
-				<nav>				
-					<ul>
-				    	<li><a href="index.html">Home</a></li>
-				    	<li><a href="rsvp.html" class="currentPage">RSVP</a></li>
-				    	<li><a href="wedding.html">Wedding Weekend</a></li>
-				    	<li><a href="travel.html">Travel</a></li>
-				    	<li><a href="accommodations.html">Accommodations</a></li>
-					</ul>
-				</nav>
-			</header>
-			<!--<div class="content">
-				<img src="door1.jpg">
-				<h1>RSVP</h1>
-				<p>Please RSVP by Month, Date, 2016.</p>
-				<form action="action_page.php">
-					  <label>Name (First & Last)*</label><br>
-					  <input type="text" name="fullname" required><br><br>
-					  <label>Email Address*</label><br>
-					  <input type="email" name="email" required><br><br>
-					  <label>Are you bringing a plus one?*</label><br>
-					  <input type="checkbox" name="plusone" value="yes"> Yes <input type="checkbox" name="plusone" value="no"> No<br><br>
-  				 	  <label>Are you bringing kids?*</label><br>
-					  <input type="checkbox" name="kids" value="yes"> Yes <input type="checkbox" name="kids" value="no"> No<br><br>
-					  <label>If you are bringing a plus one and/or kids, what are their names?</label><br>
-					  <input type="text" name="guestname"><br><br>
-					  <label>Send us a note</label><br>
-					  <textarea name="message" rows="10" cols="30"></textarea><br><br>
-					  <input type="submit" value="Submit">
-				</form>
-			</div> -->
-			<div class="content">
-			<iframe src="https://docs.google.com/forms/d/18J-Z8FpMlnD80DxtEQrpU_eGV_jPI4Uec34oHmj5IhM/viewform?embedded=true" width="800" height="1000" >Loading...</iframe>
-			</div>
+			    	<li><a href="accommodations.html">Accommodations</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--<div class="content">
+			<img src="door1.jpg">
+			<h1>RSVP</h1>
+			<p>Please RSVP by Month, Date, 2016.</p>
+			<form action="action_page.php">
+				  <label>Name (First & Last)*</label><br>
+				  <input type="text" name="fullname" required><br><br>
+				  <label>Email Address*</label><br>
+				  <input type="email" name="email" required><br><br>
+				  <label>Are you bringing a plus one?*</label><br>
+				  <input type="checkbox" name="plusone" value="yes"> Yes <input type="checkbox" name="plusone" value="no"> No<br><br>
+ 				 	  <label>Are you bringing kids?*</label><br>
+				  <input type="checkbox" name="kids" value="yes"> Yes <input type="checkbox" name="kids" value="no"> No<br><br>
+				  <label>If you are bringing a plus one and/or kids, what are their names?</label><br>
+				  <input type="text" name="guestname"><br><br>
+				  <label>Send us a note</label><br>
+				  <textarea name="message" rows="10" cols="30"></textarea><br><br>
+				  <input type="submit" value="Submit">
+			</form>
+		</div> -->
+		<div class="content">
+		<iframe src="https://docs.google.com/forms/d/18J-Z8FpMlnD80DxtEQrpU_eGV_jPI4Uec34oHmj5IhM/viewform?embedded=true" width="800" height="700" >Loading...</iframe>
 		</div>
 	</body>
 </html>

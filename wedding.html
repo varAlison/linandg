@@ -11,97 +11,92 @@
  		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="canvas">
-			<div class="dropdown">
-			    <div data-toggle="dropdown">Menu
-			    <span class="caret"></span></div>
-			    <ul class="dropdown-menu">
-			    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		<div class="dropdown">
+		    <div data-toggle="dropdown">Menu<span class="caret"></span></div>
+		    <ul class="dropdown-menu">
+		    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="rsvp.html">RSVP</a></li>
+		    	<li><a href="wedding.html" class="currentPage">Wedding Weekend</a></li>
+		    	<li><a href="travel.html">Travel</a></li>
+			    <li><a href="accommodations.html">Accommodations</a></li>
+		    </ul>
+		</div>
+		<script>
+			$(document).ready(function(){
+			  $('.dropdown a.test').on("click", function(e){
+			    $(this).next('ul').toggle();
+			    e.stopPropagation();
+			    e.preventDefault();
+			  });
+			});
+		</script>
+		<header>
+			<div class="siteName">Alison & Con&nbsp;Way</div>
+			<div class="weddomgDate">
+				<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
+			</div>	
+			<nav>				
+				<ul>
 			    	<li><a href="index.html">Home</a></li>
 			    	<li><a href="rsvp.html">RSVP</a></li>
 			    	<li><a href="wedding.html" class="currentPage">Wedding Weekend</a></li>
 			    	<li><a href="travel.html">Travel</a></li>
-				    <li><a href="accommodations.html">Accommodations</a></li>
-			    </ul>
-			</div>
-			<script>
-				$(document).ready(function(){
-				  $('.dropdown a.test').on("click", function(e){
-				    $(this).next('ul').toggle();
-				    e.stopPropagation();
-				    e.preventDefault();
-				  });
-				});
-			</script>
-			<header>
-				<div class="siteName">Alison & Con Way</div>
-				<div class="weddomgDate">
-					<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
-				</div>	
-				<nav>				
-					<ul>
-				    	<li><a href="index.html">Home</a></li>
-				    	<li><a href="rsvp.html">RSVP</a></li>
-				    	<li><a href="wedding.html" class="currentPage">Wedding Weekend</a></li>
-				    	<li><a href="travel.html">Travel</a></li>
-				    	<li><a href="accommodations.html">Accommodations</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div class="weddingImage"></div>
-			<div class="content">
-				<h1>Wedding Weekend</h1>
-				<h2>Thursday, September 1<sup>st</sup></h2>
-				<p>
-					<span class="time">6:00PM - 8:00PM</span>
-					<br>Welcome Drinks
-					<br>Le Cloitre Saint Louis
-				</p>
-				</p>
-				<h2>Friday, September 2<sup>nd</sup></h2>
-				<p>
-					<span class="time">7:00PM</span>
-					<br>Dinner and Drinks
-					<br>Location TBD
-				</p>
-				<h2>Saturday, September 3<sup>rd</sup><br>( Wedding Day )</h2>
-				<p>
-					All wedding events will take place at Le Cloitre Saint Louis. Dress code will be semi-formal.
-				</p>
-				<p>
-					<span class="time">8:00AM - 11:00AM</span>
-					<br>Breakfast
-					<br>Le Cloitre Saint Louis
-				</p>			
-				<p>
-					<span class="time">5:30PM – 6:00PM</span>
-					<br>Ceremony
-				<p>
-					<span class="time">6:00PM – 8:00PM</span>
-					<br>Cocktail Hour
-				</p>
-				<p>
-					<span class="time">8:00PM</span>
-					<br>Reception
-				</p>
-				<p>	
-				<h2>Sunday, September 4<sup>th</sup></h2>
-				<p>
-					<span class="time">12:00PM – 2:00PM</span>
-					<br>Brunch
-					<br>Le Cloitre Saint Louis
-				</p>
-				<p>
-					<span class="time">2:00PM - 7:00PM</span>
-					<br>Hangout
-					<br>Location TBD
-				</p>
-				<p>
-					<span class="time">7:00PM</span>
-					<br>Picnic Dinner
-					<br>Location TBD
-				</p>
-			</div>
+			    	<li><a href="accommodations.html">Accommodations</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="weddingImage"></div>
+		<div class="content">
+			<h1>Wedding Weekend</h1>
+			<h2>Thursday, September 1<sup>st</sup></h2>
+			<p>
+				<span class="time">6:00PM - 8:00PM</span>
+				<br>Welcome Drinks
+				<br>Le Clo&icirc;tre Saint-Louis
+			</p>
+			</p>
+			<h2>Friday, September 2<sup>nd</sup></h2>
+			<p>
+				<span class="time">7:00PM</span>
+				<br>Dinner and Drinks
+				<br>Le Bercail
+				<br>162 Chemin des Canotiers
+				<br>84000 Avignon
+			</p>
+			<h2>Saturday, September 3<sup>rd</sup><br>( Wedding Day )</h2>
+			<p>
+				<span class="time">8:00AM - 11:00AM</span>
+				<br>Breakfast
+				<br>Le Clo&icirc;tre Saint-Louis
+			</p>			
+			<p>
+				All wedding events are at Le Clo&icirc;tre Saint-Louis 
+				<br>Dress is semi-formal
+			</p>
+			<p>
+				<span class="time">5:30PM – 6:00PM</span>
+				<br>Marriage Ceremony
+			<p>
+				<span class="time">6:00PM – 8:00PM</span>
+				<br>Cocktails
+			</p>
+			<p>
+				<span class="time">8:00PM - 4:00AM</span>
+				<br>Reception
+			</p>
+			<p>	
+			<h2>Sunday, September 4<sup>th</sup></h2>
+			<p>
+				<span class="time">8:00AM - 11:00AM</span>
+				<br>Breakfast
+				<br>Le Clo&icirc;tre Saint-Louis
+			</p>				
+			<p>
+				<span class="time">12:00PM – 2:00PM</span>
+				<br>Brunch
+				<br>Le Clo&icirc;tre Saint-Louis
+			</p>
 		</div>
 	</body>
 </html>

@@ -11,55 +11,55 @@
  		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="canvas">
-			<div class="dropdown">
-			    <div data-toggle="dropdown">Menu
-			    <span class="caret"></span></div>
-			    <ul class="dropdown-menu">
-			    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		<div class="dropdown">
+		    <div data-toggle="dropdown">Menu
+		    <span class="caret"></span></div>
+		    <ul class="dropdown-menu">
+		    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="rsvp.html">RSVP</a></li>
+		    	<li><a href="wedding.html">Wedding Weekend</a></li>
+		    	<li><a href="travel.html">Travel</a></li>
+			    <li><a href="accommodations.html" class="currentPage">Accommodations</a></li>
+		    </ul>
+		</div>
+		<script>
+			$(document).ready(function(){
+			  $('.dropdown a.test').on("click", function(e){
+			    $(this).next('ul').toggle();
+			    e.stopPropagation();
+			    e.preventDefault();
+			  });
+			});
+		</script>
+		<header>
+			<div class="siteName">Alison & Con&nbsp;Way</div>
+			<div class="weddomgDate">
+				<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
+			</div>	
+			<nav>				
+				<ul>
 			    	<li><a href="index.html">Home</a></li>
 			    	<li><a href="rsvp.html">RSVP</a></li>
 			    	<li><a href="wedding.html">Wedding Weekend</a></li>
 			    	<li><a href="travel.html">Travel</a></li>
-				    <li><a href="accommodations.html" class="currentPage">Accommodations</a></li>
-			    </ul>
-			</div>
-			<script>
-				$(document).ready(function(){
-				  $('.dropdown a.test').on("click", function(e){
-				    $(this).next('ul').toggle();
-				    e.stopPropagation();
-				    e.preventDefault();
-				  });
-				});
-			</script>
-			<header>
-				<div class="siteName">Alison & Con Way</div>
-				<div class="weddomgDate">
-					<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
-				</div>	
-				<nav>				
-					<ul>
-				    	<li><a href="index.html">Home</a></li>
-				    	<li><a href="rsvp.html">RSVP</a></li>
-				    	<li><a href="wedding.html">Wedding Weekend</a></li>
-				    	<li><a href="travel.html">Travel</a></li>
-				    	<li><a href="accommodations.html" class="currentPage">Accommodations</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div class = "accommodationImage"></div>
-			<div class="content">
-				<h1>Accommodations</h1>
-				<h2><a href="http://www.cloitre-saint-louis.com/en/" target="blank" class="bold">Le Cloitre Saint Louis</a></h2>
-				<p>
-					20 Rue du Portail Boquier, 84000 Avignon, France
-					<br><br>We have privatized this venue for the wedding day. It is also where all of the wedding day and day-after festivities will take place. We highly recommend you stay here.
-					<br><br>€130 Saturday night
-					<br>€141/night for any other night
-					<br><br><span class="bold">To receive the discounted rate listed above, please make sure to email Alexandre Moineau at <a href="mailto:contact@chateauderoussan.com">amoineau@cloitre-saint-louis.com</a>. DON'T book directly on the website.</span>
-				</p>
-			</div>
+			    	<li><a href="accommodations.html" class="currentPage">Accommodations</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class = "accommodationImage"></div>
+		<div class="content">
+			<h1>Accommodations</h1>
+			<h2><a href="http://www.cloitre-saint-louis.com/en/" target="blank" class="bold">Le Clo&icirc;tre Saint-Louis</a></h2>
+			<p>
+				20 Rue du Portail Boquier, 84000 Avignon, France
+				<br><br>We have privatized this venue for the wedding day. It is where all wedding day and day-after festivities will take place. We highly recommend you stay here.
+				<br><br>€130 Saturday night
+				<br>€141/night for any other night
+				<br><br><span class="bold">To receive the rate listed above, please make reservations by emailing Alexandre Moineau at
+				<br><a href="mailto:contact@chateauderoussan.com">amoineau@cloitre-saint-louis.com.</a>
+				<br><br>DO NOT book directly on the website.</span>
+			</p>
 		</div>
 	</body>
 </html>

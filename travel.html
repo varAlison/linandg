@@ -11,68 +11,72 @@
  		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="canvas">
-			<div class="dropdown">
-			    <div data-toggle="dropdown">Menu
-			    <span class="caret"></span></div>
-			    <ul class="dropdown-menu">
-			    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		<div class="dropdown">
+		    <div data-toggle="dropdown">Menu<span class="caret"></span></div>
+		    <ul class="dropdown-menu">
+		    	<!--<li><a tabindex="-1" href="/">Home</a></li>-->
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="rsvp.html">RSVP</a></li>
+		    	<li><a href="wedding.html">Wedding Weekend</a></li>
+		    	<li><a href="travel.html" class="currentPage">Travel</a></li>
+					<li><a href="accommodations.html">Accommodations</a></li>
+		    </ul>
+		</div>
+		<script>
+			$(document).ready(function(){
+			  $('.dropdown a.test').on("click", function(e){
+			    $(this).next('ul').toggle();
+			    e.stopPropagation();
+			    e.preventDefault();
+			  });
+			});
+		</script>
+		<header>
+			<div class="siteName">Alison & Con&nbsp;Way</div>
+			<div class="weddomgDate">
+				<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
+			</div>	
+			<nav>				
+				<ul>
 			    	<li><a href="index.html">Home</a></li>
 			    	<li><a href="rsvp.html">RSVP</a></li>
 			    	<li><a href="wedding.html">Wedding Weekend</a></li>
 			    	<li><a href="travel.html" class="currentPage">Travel</a></li>
-					<li><a href="accommodations.html">Accommodations</a></li>
-			    </ul>
-			</div>
-			<script>
-				$(document).ready(function(){
-				  $('.dropdown a.test').on("click", function(e){
-				    $(this).next('ul').toggle();
-				    e.stopPropagation();
-				    e.preventDefault();
-				  });
-				});
-			</script>
-			<header>
-				<div class="siteName">Alison & Con Way</div>
-				<div class="weddomgDate">
-					<p>September 1<sup>st</sup> to 4<sup>th</sup>, 2016 ♥ Avignon, France</p>
-				</div>	
-				<nav>				
-					<ul>
-				    	<li><a href="index.html">Home</a></li>
-				    	<li><a href="rsvp.html">RSVP</a></li>
-				    	<li><a href="wedding.html">Wedding Weekend</a></li>
-				    	<li><a href="travel.html" class="currentPage">Travel</a></li>
-				    	<li><a href="accommodations.html">Accommodations</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div class="travelImage"></div>
-			<div class="content">
-				<h1>How To Get There</h1>
-				<h2>Venue / Recommended Accomodation</h2>
-				<p>Le Cloitre Saint Louis
-				<br>20 Rue du Portail Boquier, 84000 Avignon, France
-				</p>
-				<h2>From Paris</h2>
-				<p>
-					Take the TGV from Paris Airport CDG or Paris Gare Lyon (if you are in Paris) to Avignon TGV; from Avignon TGV, you can catch a 5-minute train or bus from Avignon TGV to Avignon Centre, or you can take a cab. The train takes around 3 hours and 30 minutes. You can purchase train tickets <a href="http://www.raileurope-world.com/" targe="blank">here</a>. If you are taking the train from Avignon TGV to Avignon Centre, select "Avignon" as your final destination.
-				</p>
-				<h2>From Marseille</h2>
-				<p>	
-					Take the TER from Marseille St Char to Avignon Centre. The train takes around 1 hour and 10 minutes. You can purchase train tickets <a href="http://www.raileurope-world.com/" targe="blank">here</a>. 
-				</p>
-				</p>
-				<h2>From Nice</h2>
-				<p>
-					Take the TGV from Nice-Ville to Avignon TGV; from Avignon TGV, you can catch a 5-minute train or bus from Avignon TGV to Avignon Centre, or you can take a cab. The train takes around 3 hours to 3 hours and 44 minutes. You can purchase train tickets <a href="http://www.raileurope-world.com/" targe="blank">here</a>. If you are taking the train from Avignon TGV to Avignon Centre, select "Avignon" as your final destination.
-				</p>
-				<h2>From Avignon Centre Station</h2>
-				<p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d718.1959408228258!2d4.805594198004878!3d43.94314864431716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x12b5eb8c0dc89231%3A0x824a4a5e57ae13e8!2sGare+D&#39;Avignon+Centre%2C+Boulevard+Saint-Roch%2C+Avignon%2C+France!3m2!1d43.941959!2d4.804898!4m5!1s0x12b5eb894ca47a25%3A0xdb704ca7d32a0253!2scloitre+saint+louis!3m2!1d43.9438187!2d4.8049235!5e0!3m2!1sen!2sus!4v1457812492749" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</p>
-			</div>
+			    	<li><a href="accommodations.html">Accommodations</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="travelImage"></div>
+		<div class="content">
+			<h1>How To Get There</h1>
+			<h2>Venue and Recommended Accomodation</h2>
+			<p>Le Clo&icirc;tre Saint-Louis
+			<br>20 Rue du Portail Boquier, 84000 Avignon, France
+			<br>(Five minute walk from Avignon Centre train station)
+			</p>
+			<h2>From Paris</h2>
+			<p>
+				Take the TGV from Paris Airport CDG or Paris Gare Lyon (if you are already in Paris) to Avignon Centre. The train takes around 3 hours and 30 minutes and requires a change of trains at Avignon TGV.</p>
+			<p>The Avignon TGV station is 5km from Avignon Centre. There are rental cars at Avignon TGV. All wedding events are within walking distance from Avignon Centre so a car is not necessary for wedding events but if you want to get a car this is a good place to get one and there is parking at Le Clo&icirc;tre Saint-Louis.</p>
+			<p>Train tickets can be purchased at <a href="http://www.sncf.com/en/passengers" target="blank">SNCF</a>.</p>
+			<p>Train station names will appear as follows:
+				<br> Paris Airport CDG: "Paris Roissy Charles de Gaulle Airport (TGV station - CDG 2 - 25km from Paris - FR)"
+				<br> Avignon Centre: "Avignon Centre (FR)"
+				<br> Paris Gare de Lyon: use "Paris (all stations - FR)"
+			</p>
+			<h2>From Marseille</h2>
+			<p>	
+				Take the TER from Marseille St Charles to Avignon Centre. The train takes around 1 hour and 10 minutes. You can purchase train tickets <a href="http://www.sncf.com/en/passengers" target="blank">SNCF</a>. 
+			</p>
+			</p>
+			<h2>From Nice</h2>
+			<p>
+				Take the TGV from Nice (FR) to Avignon to Avignon Centre. The train takes around 3 hours to 3 hours and 44 minutes. You can purchase train tickets <a href="http://www.sncf.com/en/passengers" target="blank">SNCF</a>. 
+			</p>
+			<h2>From Avignon Centre Station</h2>
+			<p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d718.1959408228258!2d4.805594198004878!3d43.94314864431716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x12b5eb8c0dc89231%3A0x824a4a5e57ae13e8!2sGare+D&#39;Avignon+Centre%2C+Boulevard+Saint-Roch%2C+Avignon%2C+France!3m2!1d43.941959!2d4.804898!4m5!1s0x12b5eb894ca47a25%3A0xdb704ca7d32a0253!2scloitre+saint+louis!3m2!1d43.9438187!2d4.8049235!5e0!3m2!1sen!2sus!4v1457812492749" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</p>
 		</div>
 	</body>
 </html>
