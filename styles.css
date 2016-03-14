@@ -180,6 +180,15 @@ input[type="submit"] {
 	background-size: cover;
 	background-position: center;
 }
+
+.accommodationImage {	
+	background-position: 0% 100%;
+}
+
+.weddingImage {
+	background-position: 0% 90%;
+}
+
 /* iframe form*/
 
 iframe {
