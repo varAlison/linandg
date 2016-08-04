@@ -20,6 +20,14 @@ body {
 	padding-bottom: 4em;
 }
 
+.insta a, .insta a:link, .insta a:visited {
+	text-decoration: none;
+}
+
+.insta a:hover, .insta a:active {
+	text-decoration: none;
+}
+
 .bold {
 	font-weight: 700;
 }
